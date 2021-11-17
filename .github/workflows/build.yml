@@ -1,4 +1,3 @@
-cat << 'EOF' > .github/workflows/build.yml
 name: Push to Docker registry
 
 on:
@@ -28,4 +27,3 @@ jobs:
         uses: actions-hub/docker@master
         with:
           args: push sig9/tacacs-plus:latest
-EOF
